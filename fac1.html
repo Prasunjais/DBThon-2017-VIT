@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Course Page</title>
+    <style>
+p
+    {
+        font-family: monospace;
+        color: red;
+        font-size: 10px;
+    }
+.outer
+    {
+        width : 1100px;
+        height : auto;
+        margin-left : 110px;
+        background-color : aquamarine;
+        border-radius : 5px;
+        padding : 10px;
+        float: left;
+        
+    }
+#f1
+    {
+        font-family: sans-serif;
+        font-size: 52px;
+        font-stretch: expanded;
+        font-weight: bold;
+        font-synthesis: style;
+        float: right;
+        padding: 22px;
+        color: darkblue;
+        margin-right: 180px;
+    }
+#img1
+    {
+        width:230px;
+        height: 116px;
+        float=left;
+        padding: 2px;
+    }
+.couter
+    {
+        width:100%;
+        height: 124.5;
+        float: left;
+        background: rgba(255,255,255,.3);
+    }
+.main
+    {
+        text-align: center;        
+        width:1100px;
+        height:auto; 
+        float: left;
+        height:auto;
+        background: rgba(240,240,240,.5);
+    }
+#f2
+    {
+        font-family: sans-serif;
+        font-kerning: normal;
+        font-size: 35px;
+        font-stretch: ultra-expanded;
+        margin-left: 20px;        
+    }
+#f3
+    {
+        font-family : monospace;
+        font-size :15px;
+        font-kerning: normal;
+        font-stretch: ultra-expanded;
+        font-weight: bold;
+    }
+table,td
+    {
+        margin: auto;
+        border-collapse: collapse;
+        font-family: monospace;
+        font-size: 18px;
+        font-weight: bold;
+        align-self: center;
+        padding:8px;
+        
+    }
+.tbl
+    {
+        width:330px;
+        background: rgba(250,250,230,.5);
+        margin-top: 30px;
+        margin-left: 100px;
+        padding: 10px;
+        float:left;
+        
+    }
+.tb2
+    {
+        width:350px;
+        background: rgba(250,250,230,.5);
+        margin-top: 30px;
+        margin-left: 150px;
+        padding: 10px;
+        float: left;
+    }
+input[type=text]
+    {
+        font-family: monospace;
+        border-color: aqua;
+        color: midnightblue;
+        box-shadow: 03px 03px 7px #888888;
+    }
+input[type=radio]:hover
+        {
+        background-color: darkred;
+            
+        }
+.img2
+        {
+            width: 450px;
+            height:220px;
+            float:left;
+            padding:10px;
+            background-image: url(Images/tlog.png);
+            margin-left: 90px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;
+            box-shadow: 03px 03px 7px #888888;
+                        
+        }
+input[type=submit]:hover {
+    background-color: red;
+    
+}
+input[type=submit] {
+    font-family: monospace;
+    width: 100%;
+    background-color: hsla(0, 100%, 30%, 0.8);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="outer">
+<div class="couter">
+<img src="Images/VIT.png" id=img1>
+<font id="f1">Welcome</font></div>
+    <div class="main">
+    <hr>
+    </div>
+    <div class="main">
+    <font id="f2">WELCOME TO FACULTY's HOMEPAGE<span style="color:red">*</span><br><hr></font>
+    </div>
+    <div class="main" style="text-align:left;">
+    <font id="f2">What you want to do?</font>
+        <table>
+        <caption>Option Available</caption>
+        <form name="f1" action="fg.php" method="post">
+            <tr>
+            <td><input type="radio" name="radio" value="update"><font id="f3">Update Attendance</font></td>
+            <td><input type="radio" name="radio" value="view"><font id="f3">View Attendance</font></td>
+            </tr>
+            <tr>
+            <td colspan="2"><input type=submit name="submit" value="Submit"></td>
+            </tr>
+            </form>
+        </table>
+    </div>
+    </div>
+    </body>
+</html>
